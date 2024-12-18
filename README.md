@@ -20,9 +20,7 @@
 - Quản lý, lưu trữ thông báo
 - Ứng dụng vẫn hoạt động khi bị tắt
 
-## Project có 2 phần chính:
-
-### Lưu ý
+## Lưu ý
 
 - Sử dụng cảm biến Max30100 để đọc giá trị nhịp tim và nồng độ oxy trong máu, Arduino Uno R3 để điều khiển cảm biến và gửi giá trị đến Esp8266 thông qua giao thức UART.
 
