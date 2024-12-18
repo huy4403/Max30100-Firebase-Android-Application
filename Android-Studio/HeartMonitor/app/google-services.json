@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "396746614355",
+    "project_id": "heart-monitor-90f63",
+    "storage_bucket": "heart-monitor-90f63.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:396746614355:android:1a3779dd04c760819fc8a6",
+        "android_client_info": {
+          "package_name": "com.iot.heartmonitor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxZLSqwiE2gbPGbm5quG6T2EWC9hxdJAQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

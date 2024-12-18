@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="Notification OFF"
+        android:id="@+id/offnotify"
+        android:icon="@drawable/baseline_notifications_off"
+        app:iconTint="@color/iconColor"
+        app:showAsAction="ifRoom" />
+    <item
+        android:title="Notifications"
+        android:id="@+id/notifications"
+        android:icon="@drawable/baseline_notifications"
+        app:iconTint="@color/iconColor"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:title="Setting"
+        android:id="@+id/setting"
+        android:icon="@drawable/baseline_settings"
+        app:iconTint="@color/iconColor"
+        app:showAsAction="ifRoom" />
+
+</menu>

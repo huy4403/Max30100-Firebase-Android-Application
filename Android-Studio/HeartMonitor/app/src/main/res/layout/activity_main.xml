@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/lavender"
+        app:logo="@drawable/baseline_home_light"
+        app:titleMarginStart="30dp"
+        android:theme="@style/ThemeOverlay.AppCompat.DayNight.ActionBar"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="14dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <FrameLayout
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="start"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="100dp">
+
+
+            <me.tankery.lib.circularseekbar.CircularSeekBar
+                android:id="@+id/circularSeekBarHR"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10sp"
+                app:cs_circle_color="@color/gray"
+                app:cs_circle_progress_color="#E9564B"
+                app:cs_circle_stroke_width="10sp"
+                app:cs_disable_pointer="true"
+                app:cs_end_angle="40"
+                app:cs_max="200"
+                app:cs_start_angle="140" />
+
+            <TextView
+                android:id="@+id/tvHR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:layout_marginEnd="15sp"
+                android:layout_marginBottom="20sp"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textColor="@color/red"/>
+
+            <TextView
+                android:id="@+id/startHR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginEnd="65sp"
+                android:layout_marginTop="50sp"
+                android:textAlignment="center"
+                android:text="0"
+                android:layout_gravity="center"
+                android:textColor="@color/gray"/>
+
+            <TextView
+                android:id="@+id/endHR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginStart="35sp"
+                android:layout_marginTop="50sp"
+                android:textAlignment="center"
+                android:text="200"
+                android:layout_gravity="center"
+                android:textColor="@color/gray"/>
+
+            <TextView
+                android:id="@+id/hr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginEnd="15sp"
+                android:layout_marginTop="80sp"
+                android:textAlignment="center"
+                android:text="Nhịp tim"
+                android:layout_gravity="center"
+                android:textColor="@color/gray"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="start"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="100dp">
+
+            <me.tankery.lib.circularseekbar.CircularSeekBar
+                android:id="@+id/circularSeekBarSpo2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10sp"
+                app:cs_circle_stroke_width="10sp"
+                app:cs_disable_pointer="true"
+                app:cs_start_angle="140"
+                app:cs_end_angle="40"
+                app:cs_max="100"
+                app:cs_circle_color="@color/gray"
+                app:cs_circle_progress_color="@color/teal_200" />
+
+            <TextView
+                android:id="@+id/tvSpo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:layout_marginEnd="15sp"
+                android:layout_marginBottom="20sp"
+                android:textColor="@color/teal_200"/>
+
+            <TextView
+                android:id="@+id/startSpo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginEnd="65sp"
+                android:layout_marginTop="50sp"
+                android:textAlignment="center"
+                android:text="0"
+                android:layout_gravity="center"
+                android:textColor="@color/gray"/>
+
+            <TextView
+                android:id="@+id/endSpo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginStart="35sp"
+                android:layout_marginTop="50sp"
+                android:textAlignment="center"
+                android:text="100"
+                android:layout_gravity="center"
+                android:textColor="@color/gray"/>
+
+            <TextView
+                android:id="@+id/spo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginEnd="15sp"
+                android:layout_marginTop="80sp"
+                android:textAlignment="center"
+                android:text="Nồng độ Oxy"
+                android:layout_gravity="center"
+                android:textColor="@color/gray"/>
+        </FrameLayout>
+
+
+    </LinearLayout>
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
